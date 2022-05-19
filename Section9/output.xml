@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220516 20:02:57.487" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 002" source="C:\Users\lauri\OneDrive\Työpöytä\Learn_RF\Section9\TC_002.robot">
+<test id="s1-t1" name="TC_001 Validate Tab Opening and Back" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${VAR1}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220516 20:02:57.746" level="INFO">Opening browser 'CHROME' to base url 'https://robotframework.org/#getting-started'.</msg>
+<status status="PASS" starttime="20220516 20:02:57.746" endtime="20220516 20:03:01.019"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${VAR2}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220516 20:03:01.020" level="INFO">Opening browser 'firefox' to base url 'https://robotframework.org/foundation/'.</msg>
+<msg timestamp="20220516 20:03:01.021" level="INFO">Firefox driver log is always forced to to: C:\Users\lauri\OneDrive\Työpöytä\Learn_RF\Section9\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220516 20:03:01.019" endtime="20220516 20:03:07.888"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{List1}</var>
+<arg>Hello</arg>
+<arg>22</arg>
+<arg>23.23</arg>
+<arg>World!</arg>
+<arg>Audio</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220516 20:03:07.895" level="INFO">@{List1} = [ Hello | 22 | 23.23 | World! | Audio ]</msg>
+<status status="PASS" starttime="20220516 20:03:07.895" endtime="20220516 20:03:07.895"/>
+</kw>
+<for flavor="IN">
+<var>${i}</var>
+<value>${List1}</value>
+<iter>
+<var name="${i}">['Hello', '22', '23.23', 'World!', 'Audio']</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220516 20:03:07.915" endtime="20220516 20:03:07.917"/>
+</kw>
+<status status="PASS" starttime="20220516 20:03:07.915" endtime="20220516 20:03:07.917"/>
+</iter>
+<status status="PASS" starttime="20220516 20:03:07.915" endtime="20220516 20:03:07.917"/>
+</for>
+<status status="PASS" starttime="20220516 20:02:57.745" endtime="20220516 20:03:07.919"/>
+</test>
+<status status="PASS" starttime="20220516 20:02:57.489" endtime="20220516 20:03:07.920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 002">TC 002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

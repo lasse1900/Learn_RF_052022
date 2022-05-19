@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220515 09:49:21.451" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 004b" source="C:\Users\lauri\OneDrive\Työpöytä\Learn_RF\Section6\TC_004b.robot">
+<test id="s1-t1" name="TC_003 Variable Test" line="9">
+<kw name="Set Variable" library="BuiltIn">
+<var>${var}</var>
+<arg>NO</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220515 09:49:21.738" level="INFO">${var} = NO</msg>
+<status status="PASS" starttime="20220515 09:49:21.736" endtime="20220515 09:49:21.738"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${var}'=='YES'</arg>
+<arg>log to console</arg>
+<arg>Value found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20220515 09:49:21.739" endtime="20220515 09:49:21.739"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${var}'=='NO'</arg>
+<arg>log to console</arg>
+<arg>Value Not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Value Not found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220515 09:49:21.740" endtime="20220515 09:49:21.740"/>
+</kw>
+<status status="PASS" starttime="20220515 09:49:21.739" endtime="20220515 09:49:21.740"/>
+</kw>
+<status status="PASS" starttime="20220515 09:49:21.735" endtime="20220515 09:49:21.741"/>
+</test>
+<status status="PASS" starttime="20220515 09:49:21.454" endtime="20220515 09:49:21.742"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 004b">TC 004b</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

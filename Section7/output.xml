@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220515 12:04:25.688" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 003" source="C:\Users\lauri\OneDrive\Työpöytä\Learn_RF\Section7\TC_003.robot">
+<test id="s1-t1" name="TC_001 Validate Login and Logout" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.thetestingworld.com/testings</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220515 12:04:25.927" level="INFO">Opening browser 'chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20220515 12:04:25.927" endtime="20220515 12:04:27.880"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220515 12:04:27.881" endtime="20220515 12:04:27.997"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_time}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220515 12:04:27.998" level="INFO">${default_time} = 0 seconds</msg>
+<status status="PASS" starttime="20220515 12:04:27.998" endtime="20220515 12:04:27.998"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220515 12:04:27.998" endtime="20220515 12:04:27.999"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220515 12:04:27.999" endtime="20220515 12:04:28.000"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_time}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220515 12:04:28.001" level="INFO">${default_time} = 10 seconds</msg>
+<status status="PASS" starttime="20220515 12:04:28.001" endtime="20220515 12:04:28.001"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220515 12:04:28.001" endtime="20220515 12:04:28.002"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_username1</arg>
+<arg>lasse</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220515 12:04:28.003" level="INFO">Typing text 'lasse' into text field 'name:fld_username1'.</msg>
+<msg timestamp="20220515 12:04:38.354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220515 12:04:38.355" level="FAIL">Element with locator 'name:fld_username1' not found.</msg>
+<status status="FAIL" starttime="20220515 12:04:28.002" endtime="20220515 12:04:38.357"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_email</arg>
+<arg>lasse@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220515 12:04:38.358" endtime="20220515 12:04:38.358"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:fld_password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220515 12:04:38.358" endtime="20220515 12:04:38.358"/>
+</kw>
+<status status="FAIL" starttime="20220515 12:04:25.926" endtime="20220515 12:04:38.359">Element with locator 'name:fld_username1' not found.</status>
+</test>
+<status status="FAIL" starttime="20220515 12:04:25.690" endtime="20220515 12:04:38.360"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 003">TC 003</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

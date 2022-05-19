@@ -1,0 +1,14 @@
+1652530477603	geckodriver	INFO	Listening on 127.0.0.1:63673
+1652530480667	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63674" "-no-remote" "-profile" "C:\\Users\\lauri\\AppData\\Local\\Temp\\rust_mozprofileyrxxzh"
+1652530481392	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lauri\\AppData\\Local\\Temp\\rust_mozprofileyrxxzh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63674/devtools/browser/15c77b37-2ea5-4cdb-bec1-f6f7fb187395
+1652530483775	Marionette	INFO	Listening on port 63680
+1652530483848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1652530485757	Marionette	INFO	Stopped listening on port 63680
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 761: Error: Connection closed before committing the transaction.
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1105: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\lauri\AppData\Local\Temp\rust_mozprofileyrxxzh\protections.sqlite
