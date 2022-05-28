@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 *** Variables ***
 ${VAR1}    https://robotframework.org/#getting-started
 ${VAR2}    https://robotframework.org/foundation/
-${BROWSER}    CHROME
+${BROWSER}    chrome
 
 *** Test Cases ***
 TC_001 Validate Tab Opening and Back
@@ -12,7 +12,7 @@ TC_001 Validate Tab Opening and Back
     # Maximize browser window
     # click element    //a[text()='https://github.com/robotframework/robotframework.github.com/issues']
     # click link    //a[contains(text(),'robotframework')]
-    open browser    ${VAR2}
+    # open browser    ${VAR2}    ${BROWSER}
     # select window    Robot Framework
     # ${url1}=    get location
     # log to console    ${url1}
