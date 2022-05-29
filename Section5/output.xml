@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220514 16:28:18.738" rpa="false" schemaversion="3">
-<suite id="s1" name="OwnKeyWords" source="C:\Users\lauri\OneDrive\Työpöytä\Learn_RF\Section5\OwnKeyWords.robot">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220528 19:43:59.752" rpa="false" schemaversion="3">
+<suite id="s1" name="OwnKeyWords" source="C:\Users\ett19411\OneDrive - Etteplan Oyj\Desktop\Learn_RF_052022\Section5\OwnKeyWords.robot">
 <test id="s1-t1" name="Robot First Test Case" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220514 16:28:19.005" level="INFO">Opening browser 'chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
-<status status="PASS" starttime="20220514 16:28:19.004" endtime="20220514 16:28:21.232"/>
+<msg timestamp="20220528 19:43:59.912" level="INFO">Opening browser 'chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20220528 19:43:59.912" endtime="20220528 19:44:02.114"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220514 16:28:21.235" endtime="20220514 16:28:21.367"/>
+<status status="PASS" starttime="20220528 19:44:02.114" endtime="20220528 19:44:02.232"/>
 </kw>
 <kw name="Enter Username Password Email">
 <arg>testing</arg>
@@ -21,28 +21,28 @@
 <arg>name:fld_username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220514 16:28:21.368" level="INFO">Typing text 'testing' into text field 'name:fld_username'.</msg>
-<status status="PASS" starttime="20220514 16:28:21.367" endtime="20220514 16:28:21.466"/>
+<msg timestamp="20220528 19:44:02.233" level="INFO">Typing text 'testing' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20220528 19:44:02.233" endtime="20220528 19:44:02.286"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fld_email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220514 16:28:21.466" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
-<status status="PASS" starttime="20220514 16:28:21.466" endtime="20220514 16:28:21.597"/>
+<msg timestamp="20220528 19:44:02.286" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<status status="PASS" starttime="20220528 19:44:02.286" endtime="20220528 19:44:02.339"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fld_password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220514 16:28:21.598" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
-<status status="PASS" starttime="20220514 16:28:21.598" endtime="20220514 16:28:21.685"/>
+<msg timestamp="20220528 19:44:02.340" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<status status="PASS" starttime="20220528 19:44:02.340" endtime="20220528 19:44:02.384"/>
 </kw>
-<status status="PASS" starttime="20220514 16:28:21.367" endtime="20220514 16:28:21.685"/>
+<status status="PASS" starttime="20220528 19:44:02.232" endtime="20220528 19:44:02.384"/>
 </kw>
-<status status="PASS" starttime="20220514 16:28:19.004" endtime="20220514 16:28:21.687"/>
+<status status="PASS" starttime="20220528 19:43:59.911" endtime="20220528 19:44:02.385"/>
 </test>
-<status status="PASS" starttime="20220514 16:28:18.741" endtime="20220514 16:28:21.688"/>
+<status status="PASS" starttime="20220528 19:43:59.753" endtime="20220528 19:44:02.385"/>
 </suite>
 <statistics>
 <total>
