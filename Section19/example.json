@@ -1,0 +1,17 @@
+{
+    "Name":"Testing world",
+    "Age": 23,
+    "PhoneNumber": "+358 644 231",
+    "city": ["Helsinki", "Tampere", "Oulu"],
+    "Address": 
+        {
+            "StreetName": "Louhenkatu",
+            "HouseNumber": "12",
+            "City": "Lohja",
+            "Number": 
+                {
+                    "Landline":"019-3283728",
+                    "Mobile": "044-23232"
+                }
+        }
+}
