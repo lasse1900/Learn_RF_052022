@@ -1,0 +1,1 @@
+TC_003.robot - reading user credential in FOR loop don't work: DeniedByUserWill not be able to change radio power ??
