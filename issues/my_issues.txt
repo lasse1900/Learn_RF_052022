@@ -1,0 +1,4 @@
+Here are projects issues to be tracked with TestRail (25.12.2023)
+
+- in Section23, check external keywords
+
